@@ -6,13 +6,12 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
     background: #7d4f35;
-    color: white;
     padding: 20px;
 }
 
@@ -20,6 +19,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -29,23 +29,41 @@ nav a {
 }
 
 .hero {
-    background: #f5f0eb;
+    background-image: linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ),
+    url("https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1600");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
     text-align: center;
-    padding: 100px 20px;
+
+    padding: 120px 20px;
 }
 
 .hero h1 {
     font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: #7d4f35;
-    color: white;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #d9b382;
+    color: #333;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
 .container {
@@ -55,24 +73,55 @@ nav a {
     padding: 60px 0;
 }
 
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+}
+
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 20px;
 }
 
-.card {
-    background: white;
-    padding: 25px;
+.gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
 }
 
 .testimonial {
-    background: #fafafa;
-    border-left: 4px solid #7d4f35;
-    padding: 20px;
-    margin-bottom: 15px;
+    background: #f8f8f8;
+    padding: 25px;
+    border-left: 5px solid #7d4f35;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contact-box {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 40px;
+    border-radius: 10px;
 }
 
 footer {
