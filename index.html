@@ -1,125 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stitch With Mary</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        header {
-            background: #8b5e3c;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        nav {
-            background: #6f4a2e;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        section {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-
-        .gallery img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .contact {
-            background: #f4f4f4;
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .button {
-            display: inline-block;
-            background: white;
-            color: #8b5e3c;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stitch With Mary</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <h1>Stitch With Mary</h1>
-    <p>Professional Alterations, Custom Sewing & Quality Craftsmanship</p>
-    <a href="#contact" class="button">Contact Mary</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-    <h2>About Mary</h2>
-    <p>
-        Welcome to Stitch With Mary. With years of sewing experience,
-        Mary specializes in alterations, custom garments, repairs,
-        and detailed craftsmanship. Every project receives personal
-        attention and care.
-    </p>
+<section class="hero">
+<h1>Stitch With Mary</h1>
+<p>Professional Alterations, Tailoring & Sewing Services in Louisville, Kentucky</p>
+<a class="btn" href="contact.html">Request a Consultation</a>
 </section>
 
-<section id="gallery">
-    <h2>Recent Work</h2>
+<section class="container">
 
-    <div class="gallery">
-        <img src="https://via.placeholder.com/400x300" alt="Sample Work">
-        <img src="https://via.placeholder.com/400x300" alt="Sample Work">
-        <img src="https://via.placeholder.com/400x300" alt="Sample Work">
-    </div>
+<h2>Welcome</h2>
+
+<p>
+Founded by Mary Antonova, a seamstress with more than 40 years of experience,
+Mary's Alterations is dedicated to exceptional craftsmanship and personalized service.
+From simple repairs to bridal alterations and custom tailoring,
+every project receives expert attention to detail.
+</p>
+
 </section>
 
-<section id="contact">
-    <div class="contact">
-        <h2>Contact Mary</h2>
+<section class="container">
 
-        <p>Phone: (Your Number)</p>
-        <p>Email: your-email@example.com</p>
-        <p>Facebook: Your Facebook Page</p>
-    </div>
+<h2>Popular Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Alterations & Repairs</h3>
+<p>Expert adjustments, hemming, zipper replacement and repairs.</p>
+</div>
+
+<div class="card">
+<h3>Custom Tailoring</h3>
+<p>Custom-fitted garments made specifically for your needs.</p>
+</div>
+
+<div class="card">
+<h3>Bridal & Formal Wear</h3>
+<p>Make your special day perfect with professional alterations.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2>What Customers Say</h2>
+
+<div class="testimonial">
+"Mary altered my wedding dress perfectly. I couldn't have been happier."
+</div>
+
+<div class="testimonial">
+"Professional, affordable and incredibly talented."
+</div>
+
+<div class="testimonial">
+"Everything fit perfectly and was completed on time."
+</div>
+
 </section>
 
 <footer>
-    <p>© 2026 Stitch With Mary. All Rights Reserved.</p>
+<p>Mary's Alterations | Louisville, KY</p>
+<p>(502) 554-4223 | marysewusa@gmail.com</p>
 </footer>
 
 </body>
