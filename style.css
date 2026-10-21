@@ -59,3 +59,8 @@
 @media(max-width:1050px) and (min-width:761px){.homepage .hero{gap:32px}.homepage .hero-photo{height:400px}.homepage h1{font-size:47px}.homepage .about-layout{gap:35px}.homepage .contact-layout{gap:35px}.homepage .preview-item img{height:270px}}
 @media(max-width:760px){.homepage .container{width:calc(100% - 40px)}.homepage .nav-wrap{min-height:112px}.homepage .hero{grid-template-columns:1fr;gap:30px;padding-block:36px 38px}.homepage h1{font-size:clamp(41px,8vw,58px)}.homepage .hero .intro{font-size:14px;max-width:450px}.homepage .hero-photo{height:430px}.homepage .hero-note{margin-top:24px}.homepage .section{padding-block:40px}.homepage #work{padding-top:10px}.homepage .section-heading>p{margin-top:16px}.homepage .service-card h3{font-size:23px}.homepage .preview-grid{grid-template-columns:1fr;gap:25px}.homepage .preview-item img{height:350px}.homepage .about-layout{grid-template-columns:1fr;gap:30px}.homepage .about-photo{max-width:400px;width:100%}.homepage .about-photo img{height:380px}.homepage .about-band{padding-block:38px}.homepage .contact-layout{gap:25px}.homepage .contact-section{padding-block:40px}.homepage .contact-section h2{font-size:40px}.homepage .contact-card{padding:24px}.homepage .contact-phone{font-size:30px}.homepage .site-footer{padding-bottom:26px}}
 @media(max-width:390px){.homepage .container{width:calc(100% - 32px)}.homepage h1{font-size:39px}.homepage .hero-photo{height:365px}.homepage .contact-phone{font-size:27px}}
+
+/* Gentle contrast between the ivory navigation and the introductory section. */
+.homepage .hero-band{background:#edf0e7;border-bottom:1px solid #d8dfd1}
+.homepage .hero-band .hero-art{isolation:isolate}
+.homepage #services{border-top:0}
