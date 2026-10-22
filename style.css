@@ -65,11 +65,11 @@
 .homepage .hero-band .hero-art{isolation:isolate}
 .homepage #services{border-top:0}
 
-/* Official card logo, recolored olive and gold, on transparent background. */
-.homepage .official-brand{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;width:280px;max-width:100%;flex-shrink:0;white-space:normal;padding-block:8px}
-.homepage .brand-owner{display:block;font-family:var(--serif);font-size:23px;font-style:italic;line-height:1.1;color:var(--ink)}
-.homepage .official-logo{display:block;width:280px;max-width:100%;height:auto;object-fit:contain;background:transparent;margin-top:1px}
-.homepage .nav-wrap{min-height:130px}
-@media(max-width:1050px) and (min-width:761px){.homepage .official-brand{width:245px}.homepage .official-logo{width:245px}.homepage .nav-wrap{gap:20px}.homepage .site-header nav{gap:18px;font-size:12px}}
-@media(max-width:760px){html{scroll-padding-top:195px}.homepage .nav-wrap{min-height:0;gap:12px;padding-block:12px 15px}.homepage .official-brand{width:min(280px,90%);padding:0}.homepage .brand-owner{font-size:21px}.homepage .official-logo{width:100%}.homepage .site-header nav{font-size:11px}}
-@media(max-width:390px){.homepage .official-brand{width:250px}.homepage .site-header nav{gap:8px;font-size:10px}.homepage .site-header .nav-cta{padding-inline:10px}}
+/* Official logo with the owner's name integrated into a compact brand arrangement. */
+.homepage .official-brand{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:0;width:280px;max-width:100%;flex-shrink:0;white-space:normal;padding-block:8px}
+.homepage .brand-owner{display:block;position:relative;z-index:1;margin:0 0 -6px 3px;font-family:var(--sans);font-size:20px;font-weight:650;font-style:normal;line-height:1;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+.homepage .official-logo{display:block;width:100%;max-width:100%;height:auto;object-fit:contain;background:transparent;margin:0}
+.homepage .nav-wrap{min-height:120px}
+@media(max-width:1050px) and (min-width:761px){.homepage .official-brand{width:245px}.homepage .brand-owner{font-size:18px;letter-spacing:2.6px;margin-bottom:-5px}.homepage .nav-wrap{gap:20px}.homepage .site-header nav{gap:18px;font-size:12px}}
+@media(max-width:760px){html{scroll-padding-top:185px}.homepage .nav-wrap{min-height:0;gap:10px;padding-block:14px 15px}.homepage .official-brand{width:min(280px,90%);padding:0}.homepage .brand-owner{font-size:20px}.homepage .site-header nav{font-size:11px}}
+@media(max-width:390px){.homepage .official-brand{width:250px}.homepage .brand-owner{font-size:18px;margin-bottom:-5px;letter-spacing:2.6px}.homepage .site-header nav{gap:8px;font-size:10px}.homepage .site-header .nav-cta{padding-inline:10px}}
